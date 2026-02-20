@@ -1,0 +1,31 @@
+{
+  "product_query": "notebook i5 16gb",
+  "currency": "BRL",
+  "sources": [
+    {
+      "name": "Kabum - busca notebook",
+      "url": "https://www.kabum.com.br/busca/notebook-i5",
+      "selectors": {
+        "product_card": ".productCard",
+        "title": ".nameCard",
+        "price": ".priceCard"
+      },
+      "max_items": 15
+    },
+    {
+      "name": "Mercado Livre - busca notebook",
+      "url": "https://lista.mercadolivre.com.br/notebook-i5",
+      "selectors": {
+        "product_card": ".ui-search-result__wrapper",
+        "title": ".poly-component__title",
+        "price": ".andes-money-amount__fraction"
+      },
+      "max_items": 15
+    }
+  ],
+  "alerts": {
+    "enabled": true,
+    "target_price": 2800.0,
+    "percentage_drop": 8.0
+  }
+}
